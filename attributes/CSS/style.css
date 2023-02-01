@@ -1,0 +1,33 @@
+* {
+    padding:0px;
+    margin:0px;
+    border:0px;
+}
+
+.nav-bar {
+    background-color:#0054A4
+}
+
+.nav-item a {
+    color:white;
+    text-decoration: none;
+    font-style: none;
+}
+
+.nav-bar li{
+    text-decoration: none;
+    font-style:none;
+    font
+}
+
+/* column - row */
+.column {
+    display:flex;
+    flex-direction:column;
+}
+
+.row {
+    display:flex;
+    flex-direction:row;
+}
+
