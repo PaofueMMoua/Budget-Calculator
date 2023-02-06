@@ -1,33 +1,40 @@
-import array from 
+import data from EECU-data.js
 // Career Stuff
 let job = 
 document.getElementById("job")[0].id;
 
-function GAI(GAI) {
+function Gross(GAI) {
     for(var i = 0; i < temp// length of arrays;
     ; i++) {
-        if(job.islower = temp//array[i]
+        if(job.isLower = temp//array[i]
         ) {
-            //array[i] = GAI
-            return GAI;
+            let GAI = data.number[i];
         }
     }
     // return a popup saying Please check your spelling for the Job Input.
 }
 
-    GMI = GAI / 12; // calclating the Gross Monthly Income
-    HA = GMI * 0.33; // Housing Affordability
-    MC = GMI * 0.0145; // Medicare 
-    FT = GMI * 0.12; // Federal Taxes
-    ST = GMI * 0.07; //State Taxes
-    SS = GMI * 0.82; // Sociall Security
-    SD = GMI * 0.01; // State Disability
-    RT = GMI * 0.05; // Retirement
-    MI = 180; // Medicare insurance
+    // let GMI = GAI / 12; // calclating the Gross Monthly Income
+    // let HA = GMI * 0.33; // Housing Affordability
+    // let MC = GMI * 0.0145; // Medicare 
+    // let FT = GMI * 0.12; // Federal Taxes
+    // let ST = GMI * 0.07; //State Taxes
+    // let SS = GMI * 0.82; // Sociall Security
+    // let SD = GMI * 0.01; // State Disability
+    // let RT = GMI * 0.05; // Retirement
+    // let MI = 180; // Medicare insurance
 
 
 // Return the Ammounts to the correct areas.
-
-
+document.getElementById("").innerHTML = data.number[]
+document.getElementById("").innerHTML = GMI;
+document.getElementById("").innerHTML = GAI;
+document.getElementById("").innerHTML = HA;
+document.getElementById("").innerHTML = MC;
+document.getElementById("").innerHTML = FT;
+document.getElementById("").innerHTML = ST;
+document.getElementById("").innerHTML = SS;
+document.getElementById("").innerHTML = SD;
+document.getElementById("").innerHTML = RT;
+document.getElementById("").innerHTML = MI;
 // Checkbook
-

@@ -22,7 +22,7 @@
 <h2>Career Here</h2>
 <div class="row">
     <input type="text" placeholder="Job" id="job"><!-- Job -->
-    <input type="text"><!-- Gross Annual Income -->
+    <span id="GAI"><!-- Gross Annual Income -->
 </div>
 </div>
 <img src="" alt="">
@@ -32,23 +32,80 @@
     <h2>Please Complete The Following</h2>
     <br>
     <ol>
-        <li>What is your Career Option? <input type="text"></li>        <!-- The Job Input -->
-        <li>What is your Gross Annual Income? <input type="text"></li>  <!-- Gross Annual Income -->
-        <li>What is your Gross Monthely Income?<input type="text"></li> <!-- Gross Monthly Income -->
+        <li>What is your Career Option? <span id="job"></li>        <!-- The Job Input -->
+        <li>What is your Gross Annual Income? <span id="GAI"></li>  <!-- Gross Annual Income -->
+        <li>What is your Gross Monthely Income?<span id="GMI"></li> <!-- Gross Monthly Income -->
     </ol>
 </div>
 </section>
 <section>
 <div class="column">
     <h2>Pay Period Deductions</h2>
-    <div class="row">
-        <div class="column thirds"></div>
-        <div class="column thirds"></div>
-        <div class="column thirds"></div>
+    <div class="column">
+        <div class="row five">
+            <p>Federal Taxes</p>
+            <p>12%</p>
+            <p>x</p>
+            <p>GMI</p>
+            <span id="FT"></span>
+        </div>
+        <hr>
+        <div class="row five">
+            <p>State Taxes</p>
+            <p>7%</p>
+            <p>x</p>
+            <p>GMI</p>
+            <span id="ST"></span>
+        </div>
+        <hr>
+        <div class="row five">
+            <p>Social Security</p>
+            <p>6.2%</p>
+            <p>x</p>
+            <p>GMI</p>
+            <span id="SS"></span>
+        </div>
+        <hr>
+        <div class="row five">
+            <p>Medicare</p>
+            <p>1.45%</p>
+            <p>x</p>
+            <p>GMI</p>
+            <span id="M"></span>
+        </div>
+        <hr>
+        <div class="row five">
+            <p>State Disability</p>
+            <p>1%</p>
+            <p>x</p>
+            <p>GMI</p>
+            <span id="SD"></span>
+        </div>
+        <hr>
+        <div class="row five">
+            <p>Retirement Investment</p>
+            <p>5%</p>
+            <p>x</p>
+            <p>GMI</p>
+            <span id="RI"></span>
+        </div>
+        <hr>
+        <div class="row five">
+            <p>Medical Insurance</p>
+            <p></p>
+            <p></p>
+            <p>180</p>
+            <span id="MI"></span>
+        </div>
+        <hr>
+        <div class="row">
+            <p>Total Deductions</p>
+            <span id="TD"></span>
+        </div>
     </div>
-    <input type="text"><!-- Gross Monthly Income -->
-    <input type="text"><!-- Total Deductions -->
-    <input type="text"><!-- Net Monthly Income -->
+    <span id="GMI"></span><!-- Gross Monthly Income -->
+    <span id="TD"></span><!-- Total Deductions -->
+    <span id="NMI"></span><!-- Net Monthly Income -->
 </div>
 </section>
 <section>
@@ -56,9 +113,9 @@
         <h2>Calculate How Much of a House Payment You Can Afford</h2>
         <p>Gross Monthly Income (#2 above) x 33% (0.33) = Maximum Montlhly House Payment</p>
         <div class="row">
-            <input type="text"><!-- The GMI-->
+            <span id="GMI"><!-- The GMI-->
             <h3>(x) 0.33 =</h3>
-            <input type="text"><!-- The Max Monthly House Payment -->
+            <span id="HA"><!-- The Max Monthly House Payment -->
         </div>
     </div>
 

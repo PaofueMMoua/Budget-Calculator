@@ -57,3 +57,15 @@ input {
     border:1px solid #0054A4;
 }
 
+.five {
+    display: flex;
+    border-bottom:black solid 1px;
+    align-items:center;
+}
+.five p,
+.five span {
+    width: 20%;
+    margin: 0px 0.5%;
+    font-size:2vw;
+    /* text-align:center; */
+}
