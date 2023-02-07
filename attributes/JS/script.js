@@ -1,13 +1,18 @@
 import data from EECU-data.js
 // Career Stuff
 let job = 
-document.getElementById("job")[0].id;
-let j = 0
-for(var i = 0; i < temp// length of arrays;
+document.getElementById("job");
+let j = 0;
+
+// for (string of data) {
+
+// }
+
+for(var i = 0; i < data
 ; i++) {
-    if(job.isLower = temp//array[i]
+    if(job.isLower = data[i]
     ) {
-        let GAI = data.number[i];
+        let GAI = data[i];
     }
     j++;
 }
@@ -21,18 +26,20 @@ for(var i = 0; i < temp// length of arrays;
     let SD = GMI * 0.01; // State Disability
     let RT = GMI * 0.05; // Retirement
     let MI = 180; // Medicare insurance
-
+    let TD = MC+FT+ST+SS+SD+RT+MI;
 
 // Return the Ammounts to the correct areas.
-document.getElementById("").innerHTML = data.number[i]
-document.getElementById("").innerHTML = GMI;
-document.getElementById("").innerHTML = GAI;
-document.getElementById("").innerHTML = HA;
-document.getElementById("").innerHTML = MC;
-document.getElementById("").innerHTML = FT;
-document.getElementById("").innerHTML = ST;
-document.getElementById("").innerHTML = SS;
-document.getElementById("").innerHTML = SD;
-document.getElementById("").innerHTML = RT;
-document.getElementById("").innerHTML = MI;
+document.getElementById("GAI").innerHTML = data.number[i]
+document.getElementById("GMI").innerHTML = GMI;
+document.getElementById("GAI").innerHTML = GAI;
+document.getElementById("HA").innerHTML = HA;
+document.getElementById("M").innerHTML = MC;
+document.getElementById("FT").innerHTML = FT;
+document.getElementById("ST").innerHTML = ST;
+document.getElementById("SS").innerHTML = SS;
+document.getElementById("SD").innerHTML = SD;
+document.getElementById("RT").innerHTML = RT;
+document.getElementById("MI").innerHTML = MI;
+document.getElementById("TD").innerHTML = TD;
 // Checkbook
+
