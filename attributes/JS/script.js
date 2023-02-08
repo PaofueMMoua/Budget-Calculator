@@ -158,3 +158,28 @@ function checking() {
 
 // Checking(TEMP)
 // Checkbook
+
+
+let withdrawl_1 = document.getElementById("withdrawl-1").addEventListener("change");
+let withdrawl_2 = document.getElementById("withdrawl-2").addEventListener("change");
+let withdrawl_3 = document.getElementById("withdrawl-3").addEventListener("change");
+let withdrawl_4 = document.getElementById("withdrawl-4").addEventListener("change");
+let deposit_1 = document.getElementById("deposit-1").addEventListener("change");
+let deposit_2 = document.getElementById("deposit-2").addEventListener("change");
+let deposit_3 = document.getElementById("deposit-3").addEventListener("change");
+let deposit_4 = document.getElementById("deposit-4").addEventListener("change");
+
+let bal_1 = 0;
+let bal_2 = bal_1;
+let bal_3 = bal_2;
+let bal_4 = bal_3;
+
+let output_1 = withdrawl_1 - bal_1 + deposit_1;
+let output_2 = withdrawl_2 - bal_2 + deposit_2;
+let output_3 = withdrawl_3 - bal_3 + deposit_3;
+let output_4 = withdrawl_4 - bal_4 + deposit_4;
+
+document.getElementById('output-1') = output_1;
+document.getElementById('output-2') = output_2;
+document.getElementById('output-3') = output_3;
+document.getElementById('output-4') = output_4;

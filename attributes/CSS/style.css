@@ -62,10 +62,46 @@ input {
     border-bottom:black solid 1px;
     align-items:center;
 }
+
 .five p,
 .five span {
     width: 20%;
     margin: 0px 0.5%;
     font-size:2vw;
     /* text-align:center; */
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px 0px;
+}
+
+input {
+    width:90%;
+    align-self:center;
+    justify-self:center;
+    border:none;
+}
+
+tr {
+    height:5vw;
+}
+
+td {
+    width:20%
+}
+
+table {
+    background-color:white;
+    border-top:#0054A4 solid 5px;
+    height:7vw;
+    margin-bottom:5vh;
 }
