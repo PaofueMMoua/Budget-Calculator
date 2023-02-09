@@ -77,38 +77,38 @@ let Job = document.getElementById('job');
 Job.addEventListener('change', checking);
 
 function checking() {
-    console.log(Job.value)
     let Care = document.getElementById('job').value;
         for (let i = 0; i < data.length; i++) {
-        if (Care == data[i][0]) {
-            let GAI = Number(data[i][1]);
-            let GMI = Math.round(GAI / 12); // calclating the Gross Monthly Income
-            let HA = Math.round(GMI * 0.33); // Housing Affordability
-            let MC = Math.round(GMI * 0.0145); // Medicare 
-            let FT = Math.round(GMI * 0.12); // Federal Taxes
-            let ST = Math.round(GMI * 0.07); //State Taxes
-            let SS = Math.round(GMI * 0.062); // Sociall Security
-            let SD = Math.round(GMI * 0.01); // State Disability
-            let RT = Math.round(GMI * 0.05); // Retirement
-            let MI = 180; // Medicare insurance
-            let TD = MC+FT+ST+SS+SD+RT+MI;
-
-            // Return the Ammounts to the correct areas.
-            document.getElementById("GAI").innerHTML = GAI;
-            document.getElementById('GAI-2').innerHTML = GAI;
-            document.getElementById("GMI").innerHTML = GMI;
-            document.getElementById('GMI-3').innerHTML = GMI;
-            // document.getElementById('GMI-4').innerHTML = GMI;
-            document.getElementById("HA").innerHTML = HA;
-            document.getElementById("M").innerHTML = MC;
-            document.getElementById("FT").innerHTML = FT;
-            document.getElementById("ST").innerHTML = ST;
-            document.getElementById("SS").innerHTML = SS;
-            document.getElementById("SD").innerHTML = SD;
-            document.getElementById("RT").innerHTML = RT;
-            document.getElementById("MI").innerHTML = MI;
-            document.getElementById("TD").innerHTML = TD;
-
+            if (Care == data[i][0]) {
+                let GAI = Number(data[i][1]);
+                let GMI = Math.round(GAI / 12); // calclating the Gross Monthly Income
+                let HA = Math.round(GMI * 0.33); // Housing Affordability
+                let MC = Math.round(GMI * 0.0145); // Medicare 
+                let FT = Math.round(GMI * 0.12); // Federal Taxes
+                let ST = Math.round(GMI * 0.07); //State Taxes
+                let SS = Math.round(GMI * 0.062); // Sociall Security
+                let SD = Math.round(GMI * 0.01); // State Disability
+                let RT = Math.round(GMI * 0.05); // Retirement
+                let MI = 180; // Medicare insurance
+                let TD = MC + FT + ST + SS + SD + RT + MI;
+                let NMI = Math.round(GMI - TD);
+                // Return the Ammounts to the correct areas.
+                document.getElementById("GAI").innerHTML = GAI;
+                document.getElementById('GAI-2').innerHTML = GAI;
+                document.getElementById("GMI").innerHTML = GMI;
+                document.getElementById('GMI-3').innerHTML = GMI;
+                document.getElementById('GMI-4').innerHTML = GMI;
+                document.getElementById("HA").innerHTML = HA;
+                document.getElementById("M").innerHTML = MC;
+                document.getElementById("FT").innerHTML = FT;
+                document.getElementById("ST").innerHTML = ST;
+                document.getElementById("SS").innerHTML = SS;
+                document.getElementById("SD").innerHTML = SD;
+                document.getElementById("RT").innerHTML = RT;
+                document.getElementById("MI").innerHTML = MI;
+                document.getElementById("TD").innerHTML = TD;
+                document.getElementById("TD-2").innerHTML = TD;
+                document.getElementById("NMI").innerHTML = NMI;
         }
     }
 } 
@@ -116,20 +116,20 @@ function checking() {
 // Checking(TEMP)
 // Checkbook
 
-
-let withdrawl_1 = document.getElementById("withdrawl-1").addEventListener("change");
-let withdrawl_2 = document.getElementById("withdrawl-2").addEventListener("change");
-let withdrawl_3 = document.getElementById("withdrawl-3").addEventListener("change");
-let withdrawl_4 = document.getElementById("withdrawl-4").addEventListener("change");
-let deposit_1 = document.getElementById("deposit-1").addEventListener("change");
-let deposit_2 = document.getElementById("deposit-2").addEventListener("change");
-let deposit_3 = document.getElementById("deposit-3").addEventListener("change");
-let deposit_4 = document.getElementById("deposit-4").addEventListener("change");
+let withdrawl_1 = Number(document.getElementById("withdrawl-1").addEventListener("change"));
+let withdrawl_2 = Number(document.getElementById("withdrawl-2").addEventListener("change"));
+let withdrawl_3 = Number(document.getElementById("withdrawl-3").addEventListener("change"));
+let withdrawl_4 = Number(document.getElementById("withdrawl-4").addEventListener("change"));
+let deposit_1 = Number(document.getElementById("deposit-1").addEventListener("change"));
+let deposit_2 = Number(document.getElementById("deposit-2").addEventListener("change"));
+let deposit_3 = Number(document.getElementById("deposit-3").addEventListener("change"));
+let deposit_4 = Number(document.getElementById("deposit-4").addEventListener("change"));
 
 let bal_1 = 0;
-let bal_2 = bal_1;
-let bal_3 = bal_2;
-let bal_4 = bal_3;
+let bal_2 = output_1;
+let bal_3 = output_2;
+let bal_4 = output_3;
+let bal_5 = output_4;
 
 let output_1 = withdrawl_1 - bal_1 + deposit_1;
 let output_2 = withdrawl_2 - bal_2 + deposit_2;
