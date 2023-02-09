@@ -75,6 +75,10 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    background-color:white;
+    border-top:#0054A4 solid 5px;
+    height:7vw;
+    margin-bottom:5vh;
 }
 
 td,
@@ -97,11 +101,4 @@ tr {
 
 td {
     width:20%
-}
-
-table {
-    background-color:white;
-    border-top:#0054A4 solid 5px;
-    height:7vw;
-    margin-bottom:5vh;
 }

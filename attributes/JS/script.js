@@ -109,6 +109,31 @@ function checking() {
                 document.getElementById("TD").innerHTML = TD;
                 document.getElementById("TD-2").innerHTML = TD;
                 document.getElementById("NMI").innerHTML = NMI;
+
+                let withdrawl_1 = Number(document.getElementById("withdrawl-1").addEventListener("change"));
+                let withdrawl_2 = Number(document.getElementById("withdrawl-2").addEventListener("change"));
+                let withdrawl_3 = Number(document.getElementById("withdrawl-3").addEventListener("change"));
+                let withdrawl_4 = Number(document.getElementById("withdrawl-4").addEventListener("change"));
+                let deposit_1 = Number(document.getElementById("deposit-1").addEventListener("change"));
+                let deposit_2 = Number(document.getElementById("deposit-2").addEventListener("change"));
+                let deposit_3 = Number(document.getElementById("deposit-3").addEventListener("change"));
+                let deposit_4 = Number(document.getElementById("deposit-4").addEventListener("change"));
+
+                let bal_1 = NMI;
+                let bal_2 = output_1;
+                let bal_3 = output_2;
+                let bal_4 = output_3;
+                let bal_5 = output_4;
+
+                let output_1 = withdrawl_1 - bal_1 + deposit_1;
+                let output_2 = withdrawl_2 - bal_2 + deposit_2;
+                let output_3 = withdrawl_3 - bal_3 + deposit_3;
+                let output_4 = withdrawl_4 - bal_4 + deposit_4;
+
+                document.getElementById('output-1') = output_1;
+                document.getElementById('output-2') = output_2;
+                document.getElementById('output-3') = output_3;
+                document.getElementById('output-4') = output_4;
         }
     }
 } 
@@ -116,52 +141,3 @@ function checking() {
 // Checking(TEMP)
 // Checkbook
 
-let withdrawl_1 = Number(document.getElementById("withdrawl-1").addEventListener("change"));
-let withdrawl_2 = Number(document.getElementById("withdrawl-2").addEventListener("change"));
-let withdrawl_3 = Number(document.getElementById("withdrawl-3").addEventListener("change"));
-let withdrawl_4 = Number(document.getElementById("withdrawl-4").addEventListener("change"));
-let deposit_1 = Number(document.getElementById("deposit-1").addEventListener("change"));
-let deposit_2 = Number(document.getElementById("deposit-2").addEventListener("change"));
-let deposit_3 = Number(document.getElementById("deposit-3").addEventListener("change"));
-let deposit_4 = Number(document.getElementById("deposit-4").addEventListener("change"));
-
-if (withdrawl_1 != Number) {
-    withdrawl_1 = 0;
-}
-if (withdrawl_2 != Number) {
-    withdrawl_2 = 0;
-}
-if (withdrawl_3 != Number) {
-    withdrawl_3 = 0;
-}
-if (withdrawl_4 != Number) {
-    withdrawl_4 = 0;
-}
-if (deposit_1 != Number) {
-    deposit_1 = 0;
-}
-if (deposit_2 != Number) {
-    deposit_2 = 0;
-}
-if (deposit_3 != Number) {
-    deposit_3 = 0;
-}
-if (deposit_4 != Number) {
-    deposit_4 = 0;
-}
-
-let bal_1 = 0;
-let bal_2 = output_1;
-let bal_3 = output_2;
-let bal_4 = output_3;
-let bal_5 = output_4;
-
-let output_1 = withdrawl_1 - bal_1 + deposit_1;
-let output_2 = withdrawl_2 - bal_2 + deposit_2;
-let output_3 = withdrawl_3 - bal_3 + deposit_3;
-let output_4 = withdrawl_4 - bal_4 + deposit_4;
-
-document.getElementById('output-1') = output_1;
-document.getElementById('output-2') = output_2;
-document.getElementById('output-3') = output_3;
-document.getElementById('output-4') = output_4;
